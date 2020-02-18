@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ccojocar-org
+    provider: github
+    repository: golang-prodsec
+  name: ccojocar-org-golang-prodsec
+spec:
+  description: Imported application for ccojocar-org/golang-prodsec
+  httpCloneURL: https://github.com/ccojocar-org/golang-prodsec.git
+  org: ccojocar-org
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-prodsec
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ccojocar-org/golang-prodsec.git
