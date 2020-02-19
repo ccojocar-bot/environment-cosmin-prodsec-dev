@@ -20,7 +20,6 @@ spec:
       skipUnknownContexts: false
     prStatusBaseUrl: ""
     squashLabel: ""
-    targetUrl: http://deck{{ .Values.cluster.namespaceSubDomain }}{{ .Values.cluster.domain }}
   plugins:
     entries:
     - approve
