@@ -15,7 +15,4 @@ spec:
   providerKind: github
   providerName: github
   repo: golang-prodsec
-  scheduler:
-    kind: ""
-    name: ""
   url: https://github.com/ccojocar-org/golang-prodsec.git

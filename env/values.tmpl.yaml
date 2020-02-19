@@ -11,3 +11,6 @@ tekton:
 dex:
   certs:
     newApi: true
+
+gitops:
+  owner: {{ .Requirements.cluster.environmentGitOwner }}
