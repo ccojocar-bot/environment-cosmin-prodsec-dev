@@ -14,3 +14,8 @@ dex:
 
 gitops:
   owner: {{ .Requirements.cluster.environmentGitOwner }}
+
+whitesource:
+  apiKey: vault:cosmin-prodsec/whitesource:api-key
+  userKey: vault:cosmin-prodsec/whitesource:user-key
+  projectToken: vault:cosmin-prodsec/whitesource:project-token
