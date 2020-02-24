@@ -18,4 +18,5 @@ gitops:
 whitesource:
   apiKey: vault:cosmin-prodsec/whitesource:api-key
   userKey: vault:cosmin-prodsec/whitesource:user-key
+  productToken: vault:cosmin-prodsec/whitesource:product-token
   projectToken: vault:cosmin-prodsec/whitesource:project-token
