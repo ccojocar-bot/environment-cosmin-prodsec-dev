@@ -53,6 +53,11 @@ spec:
       report: false
       runIfChanged: ""
       skipBranches: {}
+      policy:
+        requiredStatusChecks:
+          contexts:
+            entries:
+            - whitesource
     - agent: tekton
       branches:
         entries:
