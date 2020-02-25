@@ -53,6 +53,18 @@ spec:
       report: false
       runIfChanged: ""
       skipBranches: {}
+    - agent: tekton
+      branches:
+        entries:
+        - master
+      cluster: ""
+      context: whitesource
+      labels: {}
+      maxConcurrency: 0
+      name: whitesource
+      report: false
+      runIfChanged: ""
+      skipBranches: {}
   presubmits:
     entries:
     - agent: tekton
@@ -106,51 +118,6 @@ spec:
       runIfChanged: ""
       skipBranches: {}
       trigger: (?m)^/test( all| this),?(\s+|$)
-    - agent: tekton
-      alwaysRun: true
-      branches: {}
-      cluster: ""
-      context: whitesource
-      labels: {}
-      maxConcurrency: 0
-      mergeMethod: ""
-      name: whitesource
-      optional: false
-      queries:
-      - excludedBranches: {}
-        includedBranches: {}
-        labels:
-          entries:
-          - approved
-          - lgtm
-        milestone: ""
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-        reviewApprovedRequired: false
-      - excludedBranches: {}
-        includedBranches: {}
-        labels:
-          entries:
-          - updatebot
-        milestone: ""
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-        reviewApprovedRequired: false
-      report: true
-      rerunCommand: /test whitesource
-      runIfChanged: ""
-      skipBranches: {}
-      trigger: (?m)^/test( whitesource),?(s+|$)
   schedulerAgent:
     agent: tekton
   trigger:
