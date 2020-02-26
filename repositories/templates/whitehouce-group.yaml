@@ -10,3 +10,5 @@ spec:
   repositories: 
   - name: ccojocar-org-golang-prodsec
     kind: SourceRepository
+  - name: ccojocar-org-nodejs-prodsec
+    kind: SourceRepository
