@@ -15,7 +15,4 @@ spec:
   providerKind: github
   providerName: github
   repo: nodejs-prodsec
-  scheduler:
-    kind: ""
-    name: ""
   url: https://github.com/ccojocar-org/nodejs-prodsec.git
