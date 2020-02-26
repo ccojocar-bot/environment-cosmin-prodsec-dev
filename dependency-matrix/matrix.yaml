@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/ccojocar-org/golang-prodsec.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: ccojocar-org
+  repo: nodejs-prodsec
+  url: https://github.com/ccojocar-org/nodejs-prodsec.git
+  version: ""
+  versionURL: ""
