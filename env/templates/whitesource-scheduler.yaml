@@ -58,6 +58,7 @@ spec:
           contexts:
             entries:
             - whitesource
+            - notexist
     - agent: tekton
       branches:
         entries:
@@ -67,6 +68,18 @@ spec:
       labels: {}
       maxConcurrency: 0
       name: whitesource
+      report: false
+      runIfChanged: ""
+      skipBranches: {}
+    - agent: tekton
+      branches:
+        entries:
+        - master
+      cluster: ""
+      context: notexist
+      labels: {}
+      maxConcurrency: 0
+      name: notexist
       report: false
       runIfChanged: ""
       skipBranches: {}
